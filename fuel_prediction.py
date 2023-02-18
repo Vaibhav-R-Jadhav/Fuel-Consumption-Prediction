@@ -4,9 +4,9 @@ import pickle as pk
 import streamlit as st
 
 loaded_model = pk.load(
-    open(r"C:\Users\Vaibhav\OneDrive\Documents\masai\ML\Fuel_Project\trained_model_rf.sav"","rb"))
+    open("trained_model_rf.sav","rb"))
 scaled_data = pk.load(
-    open(r"C:\Users\Vaibhav\OneDrive\Documents\masai\ML\scaled_data.sav","rb"))
+    open("scaled_data.sav","rb"))
 
 
 def input_converter(inp):
@@ -46,30 +46,30 @@ def input_converter(inp):
 
 
 
-input_converter(["SUV: Small",2.0,4,"AS",5.0,"Z"])
 
-# def main():
-#     # giving a title
-#     st.title("Fuel Consumption Prediction WebApp")
-#
-#     # getting the input data from user
-#     result = 0
-#
-#     Vehicle_class = st.text_input("Enter Vehicle class")
-#     Engine_size = st.text_input("Enter Engine Size")
-#     Cylinders = st.text_input("Enter number of Cylinders")
-#     Transmission = st.text_input("Enter Transmission type without number of gears")
-#     Co2_Rating = st.text_input("Enter CO2 Rating")
-#     Fuel_type = st.text_input("Enter Fuel type (D, E, X, Z)")
-#
-#     # code for prediction
-#
-#     # creating a button for prediction
-#     if st.button("Predict"):
-#         result = input_converter([Vehicle_class,Engine_size,Cylinders,Transmission,Co2_Rating,Fuel_type])
-#
-#     st.success(result)
-#
-#
-# if __name__ == "__main__":
-#     main()
+
+def main():
+    # giving a title
+    st.title("Fuel Consumption Prediction WebApp")
+
+    # getting the input data from user
+    result = 0
+
+    Vehicle_class = st.text_input("Enter Vehicle class")
+    Engine_size = st.text_input("Enter Engine Size")
+    Cylinders = st.text_input("Enter number of Cylinders")
+    Transmission = st.text_input("Enter Transmission type without number of gears")
+    Co2_Rating = st.text_input("Enter CO2 Rating")
+    Fuel_type = st.text_input("Enter Fuel type (D, E, X, Z)")
+
+    # code for prediction
+
+    # creating a button for prediction
+    if st.button("Predict"):
+        result = input_converter([Vehicle_class,Engine_size,Cylinders,Transmission,Co2_Rating,Fuel_type])
+
+    st.success(result)
+
+
+if __name__ == "__main__":
+    main()
