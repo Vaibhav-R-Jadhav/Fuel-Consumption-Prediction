@@ -56,7 +56,8 @@ def main():
     result = 0
     
     
-    st.sidebar.title("nput Parameters")
+    st.sidebar.title("Input Parameters")
+    ip = st.sidebar.text_input("Enter input parameter here")
     Vehicle_class = st.text_input("Enter Vehicle class")
     Engine_size = st.number_input("Enter Engine Size")
     Cylinders = st.number_input("Enter number of Cylinders")
