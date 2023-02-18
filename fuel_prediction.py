@@ -55,7 +55,7 @@ def main():
     # getting the input data from user
     result = 0
     
-    
+    st.header("Output")
     st.sidebar.title("Input Parameters")
     ip = st.sidebar.text_input("Enter input parameter here")
     Vehicle_class = st.text_input("Enter Vehicle class")
