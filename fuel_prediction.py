@@ -64,12 +64,12 @@ def main():
     Transmission = st.text_input("Enter Transmission type without number of gears")
     Co2_Rating = st.number_input("Enter CO2 Rating")
     Fuel_type = st.text_input("Enter Fuel type (D, E, X, Z)")
-    st.header("Output")
     # code for prediction
 
     # creating a button for prediction
     if st.button("Predict"):
         result = input_converter([Vehicle_class,Engine_size,Cylinders,Transmission,Co2_Rating,Fuel_type])
+    st.header("Output")
 
     st.success(result)
 
