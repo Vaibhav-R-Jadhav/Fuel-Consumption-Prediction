@@ -54,7 +54,8 @@ def main():
 
     # getting the input data from user
     result = 0
-
+    
+    side = st.sidebar.title("Input Parameters")
     Vehicle_class = st.text_input("Enter Vehicle class")
     Engine_size = st.number_input("Enter Engine Size")
     Cylinders = st.number_input("Enter number of Cylinders")
