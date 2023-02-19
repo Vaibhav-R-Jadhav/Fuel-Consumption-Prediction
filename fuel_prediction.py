@@ -18,7 +18,7 @@ def set_background_image():
       <style>
       body {
         background-image: url("Black.jpeg");
-        
+        background-size: cover;
       }
       </style>
     '''
@@ -27,8 +27,7 @@ def set_background_image():
 st.set_page_config(page_title="Your Page Title", page_icon=":guardsman:")
 
 
-# set_background_image()
-# background-size: cover;
+set_background_image()
 
 
 
