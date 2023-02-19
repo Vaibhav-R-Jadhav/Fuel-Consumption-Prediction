@@ -2,6 +2,12 @@ import numpy as np
 import pandas as pd
 import pickle as pk
 import streamlit as st
+from streamlit import html
+
+def load_css(file_name):
+  with open(file_name) as f:
+      st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+load_css("style.css")
 
 loaded_model = pk.load(
     open("trained_model_rf.sav","rb"))
