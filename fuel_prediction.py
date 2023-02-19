@@ -10,6 +10,26 @@ scaled_data = pk.load(
     open("scaled_data.sav","rb"))
 
 
+def set_background_image():
+    """
+    Set the background of the app to an image
+    """
+    page_bg_img = '''
+      <style>
+      body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_E3V1THqjF1EBlz_pdjLLtqVaoZsjZBWzA&usqp=CAU");
+        background-size: cover;
+      }
+      </style>
+    '''
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+
+st.set_page_config(page_title="Your Page Title", page_icon=":guardsman:", layout="wide")
+
+
+set_background_image()
+
+
 
 
 
@@ -53,19 +73,6 @@ def input_converter(inp):
 
 
 def main():
-    
-    st.markdown(
-    """
-    <style>
-    body {
-        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_E3V1THqjF1EBlz_pdjLLtqVaoZsjZBWzA&usqp=CAU');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True)
-    
     
     # giving a title    
     _left, mid, _right = st.columns(3)
