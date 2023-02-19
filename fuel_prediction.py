@@ -3,6 +3,7 @@ import pandas as pd
 import pickle as pk
 import streamlit as st
 import base64
+from streamlit.components.v1 import html
 
 loaded_model = pk.load(
     open("trained_model_rf.sav","rb"))
@@ -10,24 +11,18 @@ scaled_data = pk.load(
     open("scaled_data.sav","rb"))
 
 
-def set_background_image():
-    """
-    Set the background of the app to an image
-    """
-    page_bg_img = '''
-      <style>
-      body {
-        background-image: url("Black.jpeg");
-        background-size: cover;
-      }
-      </style>
-    '''
-    st.markdown(page_bg_img, unsafe_allow_html=True)
 
-st.set_page_config(page_title="Your Page Title", page_icon=":guardsman:")
+html_temp = f"""
+<style>
+body {{
+    background-image: url('https://raw.githubusercontent.com/Abhi1683/Fuel-Consumption-prediction/main/download.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}}
+</style>
+"""
 
-
-set_background_image()
+st.markdown(html_temp, unsafe_allow_html=True)
 
 
 
