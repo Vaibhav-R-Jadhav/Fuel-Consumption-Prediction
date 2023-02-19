@@ -63,7 +63,7 @@ def main():
     Engine_size = st.number_input("Enter Engine Size",min_value = 1, max_value = 7)
     Cylinders = st.number_input("Enter number of Cylinders",min_value = 1, max_value = 16)
     Transmission = st.selectbox("Select the Transmission",transmission)
-    Co2_Rating = st.number_input("Enter CO2 Rating",min_value = 0, max_value = 10)
+    Co2_Rating = st.number_input("Enter CO2 Rating",min_value = 1, max_value = 10)
     Fuel_type = st.selectbox("Select the Fuel type",fuel)
 
     # code for prediction
