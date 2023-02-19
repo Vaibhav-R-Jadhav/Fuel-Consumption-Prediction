@@ -60,7 +60,7 @@ def main():
     transmission = ['AV', 'AM', 'M', 'AS', 'A']
     fuel = ["D", "E", "X", "Z"]
     Vehicle_class = st.selectbox("Select the vehicle class",vehicle)
-    Engine_size = st.number_input("Enter Engine Size",min_value = 1, max_value = 7, step = 0.1)
+    Engine_size = st.number_input("Enter Engine Size",min_value = 1, max_value = 7)
     Cylinders = st.number_input("Enter number of Cylinders",min_value = 1, max_value = 16)
     Transmission = st.selectbox("Select the Transmission",transmission)
     Co2_Rating = st.number_input("Enter CO2 Rating",min_value = 0, max_value = 10)
