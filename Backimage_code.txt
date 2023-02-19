@@ -13,3 +13,21 @@ def set_background_image():
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 st.set_page_config(page_title="Your Page Title", page_icon=":guardsman:", layout="wide")
+
+
+[import streamlit as st
+
+# set page configuration
+st.set_page_config(
+    page_title="My Streamlit App",
+    page_icon=":smiley:",
+    layout="wide",
+    page_bg_image="https://example.com/my-background-image.jpg"
+)
+
+# display some content
+st.title("Welcome to my app")
+st.write("This is my first Streamlit app!")
+ ]
+
+
