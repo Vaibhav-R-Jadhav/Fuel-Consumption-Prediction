@@ -9,6 +9,18 @@ loaded_model = pk.load(
 scaled_data = pk.load(
     open("scaled_data.sav","rb"))
 
+st.markdown(
+    """
+    <style>
+    body {
+        background-image: url('Black.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 
 
