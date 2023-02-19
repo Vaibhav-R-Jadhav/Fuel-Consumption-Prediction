@@ -17,7 +17,7 @@ def set_background_image():
     page_bg_img = '''
       <style>
       body {
-        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_E3V1THqjF1EBlz_pdjLLtqVaoZsjZBWzA&usqp=CAU");
+        background-image: url("https://raw.githubusercontent.com/Abhi1683/Fuel-Consumption-prediction/main/download.jpeg");
         background-size: cover;
       }
       </style>
