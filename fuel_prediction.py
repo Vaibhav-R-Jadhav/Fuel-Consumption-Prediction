@@ -12,12 +12,6 @@ scaled_data = pk.load(
 
 
 
-st.markdown(
-    f'<link href="style.css" rel="stylesheet">',
-    unsafe_allow_html=True
-)
-
-
 
 def input_converter(inp):
     vcl = ['Two-seater', 'Minicompact', 'Compact', 'Subcompact', 'Mid-size', 'Full-size', 'SUV: Small', 'SUV: Standard',
