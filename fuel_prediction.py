@@ -2,12 +2,12 @@ import numpy as np
 import pandas as pd
 import pickle as pk
 import streamlit as st
+import base64
 
 loaded_model = pk.load(
     open("trained_model_rf.sav","rb"))
 scaled_data = pk.load(
     open("scaled_data.sav","rb"))
-
 
 def input_converter(inp):
     vcl = ['Two-seater', 'Minicompact', 'Compact', 'Subcompact', 'Mid-size', 'Full-size', 'SUV: Small', 'SUV: Standard',
@@ -49,10 +49,12 @@ def input_converter(inp):
 
 
 def main():
-    # giving a title
-    st.title("Fuel Consumption Prediction WebApp")
-
-    # getting the input data from user
+    # giving a title    
+    _left, mid, _right = st.columns(3)
+    with mid:
+       st.image("output-onlinegiftools.gif")
+    st.markdown("<h1 style='text-align: center; color: red;'>Fuel Consumption Prediction</h1>", unsafe_allow_html=True)        
+    # getting the input data from user    
     result = 0
     vehicle = ['Two-seater','Minicompact','Compact','Subcompact','Mid-size','Full-size','SUV: Small','SUV: Standard','Minivan','Station wagon: Small','Station wagon: Mid-size','Pickup truck: Small','Special purpose vehicle','Pickup truck: Standard']
     transmission = ['AV', 'AM', 'M', 'AS', 'A']
@@ -73,5 +75,5 @@ def main():
     st.success(result)
 
 
-if __name__ == "__main__":
-    main()
+if _name_ == "_main_":
+    main()
