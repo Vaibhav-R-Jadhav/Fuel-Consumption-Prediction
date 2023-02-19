@@ -2,12 +2,6 @@ import numpy as np
 import pandas as pd
 import pickle as pk
 import streamlit as st
-from streamlit import html
-
-def load_css(file_name):
-  with open(file_name) as f:
-      st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-load_css("style.css")
 
 loaded_model = pk.load(
     open("trained_model_rf.sav","rb"))
@@ -60,22 +54,21 @@ def main():
 
     # getting the input data from user
     result = 0
-    
-   
-    st.sidebar.title("Input Parameters")
-    ip = st.sidebar.text_input("Enter input parameter here")
-    Vehicle_class = st.text_input("Enter Vehicle class")
+    vehicle = ['Two-seater','Minicompact','Compact','Subcompact','Mid-size','Full-size','SUV: Small','SUV: Standard','Minivan','Station wagon: Small','Station wagon: Mid-size','Pickup truck: Small','Special purpose vehicle','Pickup truck: Standard']
+    transmission = ['AV', 'AM', 'M', 'AS', 'A']
+    fuel = ["D", "E", "X", "Z"]
+    Vehicle_class = st.selectbox("Select the vehicle class",vehicle)
     Engine_size = st.number_input("Enter Engine Size")
     Cylinders = st.number_input("Enter number of Cylinders")
-    Transmission = st.text_input("Enter Transmission type without number of gears")
+    Transmission = st.selectbox("Select the Transmission",transmission)
     Co2_Rating = st.number_input("Enter CO2 Rating")
-    Fuel_type = st.text_input("Enter Fuel type (D, E, X, Z)")
+    Fuel_type = st.selectbox("Select the Fuel type",fuel)
+
     # code for prediction
 
     # creating a button for prediction
-    if st.button("Predict"):
+    if st.button("Predict 🔍"):
         result = input_converter([Vehicle_class,Engine_size,Cylinders,Transmission,Co2_Rating,Fuel_type])
-    st.header("Output")
 
     st.success(result)
 
