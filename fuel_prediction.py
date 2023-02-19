@@ -58,7 +58,7 @@ def main():
     """
     <style>
     body {
-        background-image: url('Black.jpeg');
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_E3V1THqjF1EBlz_pdjLLtqVaoZsjZBWzA&usqp=CAU');
         background-repeat: no-repeat;
         background-size: cover;
     }
