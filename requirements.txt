@@ -1,12 +1,6 @@
 streamlit==1.18.1
-
-elasticsearch==8.1.2
-fbprophet==0.7.1
-keras==2.8.0
-matplotlib==3.5.1
 numpy==1.22.3
 pandas==1.4.2
 Pillow==9.1.0
-
-scikit_learn==1.0.2
+scikit_learn==1.2
 
