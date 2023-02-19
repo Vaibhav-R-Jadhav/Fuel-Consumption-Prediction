@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pickle as pk
 import streamlit as st
-from streamlit import html
+import streamlit.components.v1.html
 
 def load_css(file_name):
   with open(file_name) as f:
