@@ -24,7 +24,7 @@ def set_background_image():
     '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-st.set_page_config(page_title="Your Page Title", page_icon=":guardsman:", layout="wide")
+st.set_page_config(page_title="Your Page Title", page_icon=":guardsman:")
 
 
 # set_background_image()
