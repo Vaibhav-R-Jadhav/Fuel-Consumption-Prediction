@@ -10,13 +10,6 @@ scaled_data = pk.load(
     open("scaled_data.sav","rb"))
 
 
-# set page configuration
-st.set_page_config(
-    page_title="My Streamlit App",
-    page_icon=":smiley:",
-    layout="wide",
-    page_bg_image="https://raw.githubusercontent.com/Abhi1683/Fuel-Consumption-prediction/main/download.jpeg",
-)
 
 
 def input_converter(inp):
