@@ -12,18 +12,10 @@ scaled_data = pk.load(
 
 
 
-html_temp = f"""
-<style>
-body {{
-    background-image: url('https://raw.githubusercontent.com/Abhi1683/Fuel-Consumption-prediction/main/download.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}}
-</style>
-"""
-
-st.markdown(html_temp, unsafe_allow_html=True)
-
+st.markdown(
+    f'<link href="style.css" rel="stylesheet">',
+    unsafe_allow_html=True
+)
 
 
 
