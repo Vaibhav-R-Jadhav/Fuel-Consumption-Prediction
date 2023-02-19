@@ -9,18 +9,7 @@ loaded_model = pk.load(
 scaled_data = pk.load(
     open("scaled_data.sav","rb"))
 
-st.markdown(
-    """
-    <style>
-    body {
-        background-image: url('https://raw.githubusercontent.com/Abhi1683/Fuel-Consumption-prediction/main/download.jpeg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
 
 
 
@@ -64,6 +53,20 @@ def input_converter(inp):
 
 
 def main():
+    
+    st.markdown(
+    """
+    <style>
+    body {
+        background-image: url('https://raw.githubusercontent.com/Abhi1683/Fuel-Consumption-prediction/main/download.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True)
+    
+    
     # giving a title    
     _left, mid, _right = st.columns(3)
     with mid:
