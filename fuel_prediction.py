@@ -27,7 +27,7 @@ def set_background_image():
 st.set_page_config(page_title="Your Page Title", page_icon=":guardsman:", layout="wide")
 
 
-set_background_image()
+# set_background_image()
 
 
 
