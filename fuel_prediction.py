@@ -58,7 +58,7 @@ def main():
     """
     <style>
     body {
-        background-image: url('https://raw.githubusercontent.com/Abhi1683/Fuel-Consumption-prediction/main/download.jpeg');
+        background-image: url('Black.jpeg');
         background-repeat: no-repeat;
         background-size: cover;
     }
