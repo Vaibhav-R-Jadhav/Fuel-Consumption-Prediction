@@ -13,7 +13,7 @@ st.markdown(
     """
     <style>
     body {
-        background-image: url('Black.jpeg');
+        background-image: url('https://raw.githubusercontent.com/Abhi1683/Fuel-Consumption-prediction/main/download.jpeg');
         background-repeat: no-repeat;
         background-size: cover;
     }
