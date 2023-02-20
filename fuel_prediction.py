@@ -105,18 +105,20 @@ def main():
     transmission = ['AV', 'AM', 'M', 'AS', 'A']
     fuel = ["D", "E", "X", "Z"]
     
-    st.markdown(
-    """
-    <style>
-    .css-184tjsw.e16nr0p34 input {
-        color: red;
-    }
-    </style> 
-    """,
-    unsafe_allow_html=True
-    )
 
     Vehicle_class = st.selectbox(label = "Enter Vehicle class",options = vehicle)
+    
+    css = '''
+    <style>
+        .stSelectbox [data-testid='stMarkdownContainer'] {
+            color: yellow;
+        }
+    </style>
+    '''
+
+    st.markdown(css, unsafe_allow_html=True)
+
+    
     Engine_size = st.number_input("Enter Engine Size (please enter value in this range[1-7])")
     Cylinders = st.number_input("Enter number of Cylinders (please enter value in this range[1-16]",min_value = 1, max_value = 16)
     Transmission = st.selectbox("Select the Transmission",transmission)
