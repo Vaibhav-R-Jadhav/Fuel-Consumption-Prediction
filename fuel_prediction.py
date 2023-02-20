@@ -113,22 +113,14 @@ def main():
         .stSelectbox [data-testid='stMarkdownContainer'] {
             color: white;
         }
-    </style>
-    '''
-
-    st.markdown(css, unsafe_allow_html=True)
-    
-    
-    cs = '''
-    <style>
         .stnumber_input [data-testid='stnumber'] {
             color: white;
         }
     </style>
     '''
 
-    st.markdown(cs, unsafe_allow_html=True)
-
+    st.markdown(css, unsafe_allow_html=True)
+    
     
     Engine_size = st.number_input("Enter Engine Size (please enter value in this range[1-7])")
     Cylinders = st.number_input("Enter number of Cylinders (please enter value in this range[1-16]",min_value = 1, max_value = 16)
