@@ -111,12 +111,23 @@ def main():
     css = '''
     <style>
         .stSelectbox [data-testid='stMarkdownContainer'] {
-            color: yellow;
+            color: white;
         }
     </style>
     '''
 
     st.markdown(css, unsafe_allow_html=True)
+    
+    
+    cs = '''
+    <style>
+        .stNumber_input [data-testid='stMarkdownContainer'] {
+            color: white;
+        }
+    </style>
+    '''
+
+    st.markdown(cs, unsafe_allow_html=True)
 
     
     Engine_size = st.number_input("Enter Engine Size (please enter value in this range[1-7])")
