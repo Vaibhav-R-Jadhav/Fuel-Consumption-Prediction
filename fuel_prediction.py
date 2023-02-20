@@ -124,7 +124,7 @@ def main():
     Engine_size = st.number_input("Enter Engine Size (please enter value in this range[1-7])")
     css = """
         <style>
-           .stNumberinput [data-testid='stnumber'] {
+           .stNumberInput [data-testid='stnumber'] {
                 color: white;
                 position: fixed;
             }
