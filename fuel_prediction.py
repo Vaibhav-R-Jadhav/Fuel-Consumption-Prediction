@@ -111,7 +111,7 @@ def main():
     
     css = '''
         <style>
-            st.selectbox [data-testid='stMarkdownContainer'] {
+            .stSelectbox [data-testid='stMarkdownContainer'] {
                 color: white;
             }
             
@@ -124,7 +124,7 @@ def main():
     Engine_size = st.number_input("Enter Engine Size (please enter value in this range[1-7])")
     css = """
         <style>
-           .stnumber_input [data-testid='stnumber'] {
+           .stNumberinput [data-testid='stnumber'] {
                 color: white;
                 position: fixed;
             }
