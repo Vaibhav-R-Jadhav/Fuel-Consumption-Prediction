@@ -30,6 +30,7 @@ background-size: 180%;
 background-position: top left;
 background-repeat: no-repeat;
 background-attachment: local;
+position: absolute;
 }}
 
 [data-testid="stSidebar"] > div:first-child {{
