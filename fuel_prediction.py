@@ -108,7 +108,7 @@ def main():
     st.markdown(
     """
     <style>
-    .css-184tjsw input {
+    .css-184tjsw e16nr0p34 input {
         color: red;
     }
     </style> 
