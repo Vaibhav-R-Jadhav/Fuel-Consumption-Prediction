@@ -126,7 +126,7 @@ def main():
         <style>
            .stNumberInput [data-testid='stnumber'] {
                 color: white;
-                position: fixed;
+                position: absolute;
             }
             
         </style>
