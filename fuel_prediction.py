@@ -24,13 +24,7 @@ img = get_img_as_base64("image.jpg")
 
 page_bg_img = f"""
 <style>
-[data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf_E3V1THqjF1EBlz_pdjLLtqVaoZsjZBWzA&usqp=CAU");
-background-size: 180%;
-background-position: top left;
-background-repeat: no-repeat;
-background-attachment: local;
-}}
+
 
 [data-testid="stSidebar"] > div:first-child {{
 background-image: url("data:image/png;base64,{img}");
