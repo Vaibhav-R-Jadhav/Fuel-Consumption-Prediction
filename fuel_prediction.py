@@ -108,10 +108,10 @@ def main():
     st.markdown(
     """
     <style>
-    .css-1aumxhk input {
+    .css-184tjsw input {
         color: red;
     }
-    </style>
+    </style> 
     """,
     unsafe_allow_html=True
     )
