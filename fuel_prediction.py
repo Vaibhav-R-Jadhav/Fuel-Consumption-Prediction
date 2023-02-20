@@ -121,7 +121,7 @@ def main():
     
     cs = '''
     <style>
-        .stnumber_input [data-testid='stMarkdownContainer'] {
+        .stnumber_input [data-testid='stnumber'] {
             color: white;
         }
     </style>
