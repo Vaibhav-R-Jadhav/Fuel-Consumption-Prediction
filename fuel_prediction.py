@@ -105,7 +105,7 @@ def main():
     transmission = ['AV', 'AM', 'M', 'AS', 'A']
     fuel = ["D", "E", "X", "Z"]
     st.markdown("<h1 style='color: red;'>Select the vehicle class</h1>", unsafe_allow_html=True)
-    Vehicle_class = st.selectbox("Select the vehicle class",options = vehicle)
+    Vehicle_class = st.selectbox(options = vehicle)
     Engine_size = st.number_input("Enter Engine Size (please enter value in this range[1-7])")
     Cylinders = st.number_input("Enter number of Cylinders (please enter value in this range[1-16]",min_value = 1, max_value = 16)
     Transmission = st.selectbox("Select the Transmission",transmission)
