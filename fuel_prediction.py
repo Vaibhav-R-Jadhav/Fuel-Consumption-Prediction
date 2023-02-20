@@ -145,7 +145,7 @@ def main():
     if st.button("Predict 🔍"):
         result = input_converter([Vehicle_class,Engine_size,Cylinders,Transmission,Co2_Rating,Fuel_type])
         markdown_text = f"<h1><b>{result}</b>!</h1>"
-    st.markdown(markdown_text, unsafe_allow_html=True)
+        st.markdown(markdown_text, unsafe_allow_html=True)
 
 #     st.success(result)
 
