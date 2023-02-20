@@ -111,7 +111,7 @@ def main():
     
     css = '''
         <style>
-            .stSelectbox [data-testid='stMarkdownContainer'] {
+            .stselectbox [data-testid='stMarkdownContainer'] {
                 color: white;
             }
             
