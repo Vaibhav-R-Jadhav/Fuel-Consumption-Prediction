@@ -144,7 +144,7 @@ def main():
     # creating a button for prediction
     if st.button("Predict 🔍"):
         result = input_converter([Vehicle_class,Engine_size,Cylinders,Transmission,Co2_Rating,Fuel_type])
-        st.popup(result)
+        st.warning(result)
 
 #     st.success(result)
 
