@@ -108,18 +108,18 @@ def main():
 
     Vehicle_class = st.selectbox(label = "Enter Vehicle class",options = vehicle)
     
-    css = '''
-    <style>
-        .stSelectbox [data-testid='stMarkdownContainer'] {
-            color: white;
-        }
-        .stnumber_input [data-testid='stnumber'] {
-            color: white;
-        }
-    </style>
-    '''
+    css = """
+        <style>
+            .stSelectbox [data-testid='stMarkdownContainer'] {
+                color: white;
+            }
+            .stnumber_input [data-testid='stnumber'] {
+                color: white;
+            }
+        </style>
+    """
 
-    st.markdown(css, unsafe_allow_html=True)
+    st.write(css, unsafe_allow_html=True)
     
     
     Engine_size = st.number_input("Enter Engine Size (please enter value in this range[1-7])")
