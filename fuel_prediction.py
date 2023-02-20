@@ -108,14 +108,14 @@ def main():
 
     Vehicle_class = st.selectbox(label = "Enter Vehicle class",options = vehicle)
     
-    css = """
+    css = {
         <style>
             .stSelectbox [data-testid='stMarkdownContainer'] {
                 color: white;
             }
             
         </style>
-    """
+    }
 
     st.write(css, unsafe_allow_html=True)
     
