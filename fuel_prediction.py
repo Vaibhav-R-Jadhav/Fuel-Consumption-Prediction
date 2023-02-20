@@ -12,7 +12,6 @@ scaled_data = pk.load(
 
 
 
-df = px.data.iris()
 
 @st.experimental_memo
 def get_img_as_base64(file):
