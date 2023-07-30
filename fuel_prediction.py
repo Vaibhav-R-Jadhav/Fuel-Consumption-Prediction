@@ -48,6 +48,12 @@ right: 2rem;
 """
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
+st.set_page_config(
+        responsive_width=True,
+        responsive_height=True,
+        use_custom_layout=True,
+        layout=set_layout,
+    )
 
 
 
